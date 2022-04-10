@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BASE-TAG</title>
+        <base href="" target="_self">
+    </head>
+    <body>
+        <h1>BASE TAG</h1>
+        <script>
+        let l = document.baseURI; //used to get Base URL in Script //output: D:/CODING
+        let l2 = location.href;  // If the document has no <base> elements, then baseURI defaults to location.href.
+        console.log(l);
+        console.log(l2);
+        </script>
+        <p name="anchor">Anchor</p>
+        <a href="#anchor">TOP</a>
+    </body>
+</html>
+
+
+
+<!-- 
+    
+href
+The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed.
+target
+A keyword or author-defined name of the default browsing context to show the results of navigation from <a>, <area>, or <form> elements without explicit target attributes.
+The following keywords have special meanings:
+_self (default): Show the result in the current browsing context.
+_blank: Show the result in a new, unnamed browsing context.
+_parent: Show the result in the parent browsing context of the current one, if the current page is inside a frame. If there is no parent, acts the same as _self.
+_top: Show the result in the topmost browsing context (the browsing context that is an ancestor of the current one and has no parent). If there is no parent, acts the same as _self. 
+-->

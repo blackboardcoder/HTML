@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Template</title>
+    </head>
+    <body>
+        <h1>Template Example</h1>
+        <button onclick="showContent()">click to see template content</button>
+        <template>
+            <h2>Im Template i render only with js code</h2>
+        </template>
+        <script>
+            function showContent(){
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+    </body>
+</html>
